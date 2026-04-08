@@ -12,44 +12,57 @@
         <button id="temaDegistir">Karanlık Mod</button>
         <nav>
             <a href="#hakkimda">Hakkımda</a>
-            <a href="#projeler">Projeler</a>
+            <a href="#yetenekler">Yetenekler</a>
+            <a href="#projeler-bolumu">Projeler</a>
             <a href="#iletisim">İletişim</a>
         </nav>
     </header>
 
     <main>
-        <!-- Hakkımda Bölümü -->
-<section id="hakkimda">
-    <h2>Hakkımda</h2>
-    <img src="profil.jpg" alt="Sefik Mersinli" style="width:150px; border-radius:50%;">
-    <p>Merhaba! Ben Sefik Mersinli. Gümüşhane Üniversitesi Meslek Yüksekokulu, Bilgisayar Programcılığı bölümü öğrencisiyim. Web teknolojileri ve yazılım geliştirme üzerine kendimi geliştiriyorum.</p>
-</section>
+        <!-- Hakkımda: API ile dolacak ama başlık sabit kalsın -->
+        <section id="hakkimda">
+            <h2>Hakkımda</h2>
+            <div id="github-profil">Yükleniyor...</div>
+        </section>
 
-<!-- Yetenekler Bölümü (Hocanın istediği interaktif barlar için iskelet) -->
-<section id="yetenekler">
-    <h2>Yeteneklerim</h2>
-    <div class="yetenek-kapsayici">
-        <p>HTML</p>
-        <div class="bar-dis"><div class="bar-ic" style="width: 90%;">%90</div></div>
-        <p>CSS</p>
-        <div class="bar-dis"><div class="bar-ic" style="width: 85%;">%85</div></div>
-        <p>JavaScript</p>
-        <div class="bar-dis"><div class="bar-ic" style="width: 75%;">%75</div></div>
-    </div>
-</section>
+        <!-- Yetenekler -->
+        <section id="yetenekler">
+            <h2>Yeteneklerim</h2>
+            <div class="yetenek-kapsayici">
+                <p>HTML</p>
+                <div class="bar-dis"><div class="bar-ic" style="width: 90%;">%90</div></div>
+                <p>CSS</p>
+                <div class="bar-dis"><div class="bar-ic" style="width: 85%;">%85</div></div>
+                <p>JavaScript</p>
+                <div class="bar-dis"><div class="bar-ic" style="width: 75%;">%75</div></div>
+            </div>
+        </section>
 
-<!-- İletişim Bölümü -->
-<section id="iletisim">
-    <h2>İletişim</h2>
-    <p>Bana aşağıdaki kanallardan ulaşabilirsiniz:</p>
-    <a href="mailto:email@adresin.com">E-Posta Gönder</a> | 
-    <a href="https://github.com/SefikMersinli" target="_blank">GitHub Profilim</a>
-</section>
+        <!-- Projeler -->
+        <section id="projeler-bolumu">
+            <h2>Projelerim</h2>
+            <div id="filtreler">
+                <button onclick="projeleriFiltrele('hepsi')">Hepsi</button>
+                <button onclick="projeleriFiltrele('web')">Web</button>
+                <button onclick="projeleriFiltrele('mobil')">Mobil</button>
+            </div>
+            <div id="projeAlani" class="grid-container">
+                <!-- JS ile dolacak -->
+            </div>
+        </section>
+
+        <!-- İletişim -->
+        <section id="iletisim">
+            <h2>İletişim</h2>
+            <p>Bana aşağıdaki kanallardan ulaşabilirsiniz:</p>
+            <a href="mailto:email@adresin.com">E-Posta Gönder</a> | 
+            <a href="https://github.com/SefikMersinli" target="_blank">GitHub Profilim</a>
+        </section>
     </main>
 
     <script src="script.js"></script>
     <footer style="text-align: center; padding: 20px; margin-top: 50px;">
-    <p>&copy; 2026 Sefik Mersinli - Tüm Hakları Saklıdır.</p>
-</footer>
+        <p>&copy; 2026 Sefik Mersinli - Tüm Hakları Saklıdır.</p>
+    </footer>
 </body>
 </html>
