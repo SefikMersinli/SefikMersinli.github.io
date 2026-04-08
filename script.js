@@ -16,7 +16,6 @@ async function githubBilgileriniGetir() {
 }
 
 // 2. GÖREV: Proje Verileri - 5 PROJE (Rubrik Gereği Tam Liste)
-// 2. GÖREV: Proje Verileri - 5 PROJE (Rubrik Gereği Tam Liste)
 const projeListesi = [
     { 
         id: 1, 
