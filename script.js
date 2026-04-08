@@ -1,4 +1,4 @@
-// 1. GÖREV: GitHub Profil Bilgilerini Çekme (Dinamik Hakkımda)
+
 async function githubBilgileriniGetir() {
     try {
         const cevap = await fetch('https://api.github.com/users/SefikMersinli');
@@ -15,7 +15,7 @@ async function githubBilgileriniGetir() {
     }
 }
 
-// 2. GÖREV: Proje Verileri - 5 PROJE (Rubrik Gereği Tam Liste)
+
 const projeListesi = [
     { 
         id: 1, 
@@ -62,7 +62,7 @@ const projeListesi = [
 const projeAlani = document.getElementById("projeAlani");
 const temaButonu = document.getElementById("temaDegistir");
 
-// 3. GÖREV: Projeleri Listeleme (Tıklama Efekti ve Link Bağlantısı Dahil)
+
 function projeleriGoster(liste) {
     projeAlani.innerHTML = liste.map(proje => `
         <div class="proje-karti" onclick="window.open('${proje.link}', '_blank')">
@@ -75,7 +75,7 @@ function projeleriGoster(liste) {
     `).join("");
 }
 
-// 4. GÖREV: Filtreleme Mantığı
+
 function projeleriFiltrele(kategori) {
     if (kategori === "hepsi") {
         projeleriGoster(projeListesi);
@@ -85,13 +85,13 @@ function projeleriFiltrele(kategori) {
     }
 }
 
-// 5. GÖREV: Karanlık Mod Butonu Kontrolü
+
 temaButonu.addEventListener("click", () => {
     document.body.classList.toggle("karanlik-tema");
     temaButonu.textContent = document.body.classList.contains("karanlik-tema") ? "Aydınlık Mod" : "Karanlık Mod";
 });
 
-// 6. GÖREV: Daktilo Efekti
+
 const isim = "Sefik Mersinli - Dijital Portfolyo";
 let index = 0;
 function daktilo() {
@@ -102,8 +102,8 @@ function daktilo() {
     }
 }
 
-// BAŞLATICI KOMUTLAR
-document.querySelector("h1").innerHTML = ""; // Sayfa açılınca h1'i temizle
-daktilo(); // Daktiloyu başlat
-githubBilgileriniGetir(); // Profil verilerini çek
-projeleriGoster(projeListesi); // Projeleri ilk kez bas
+
+document.querySelector("h1").innerHTML = ""
+daktilo(); 
+githubBilgileriniGetir(); 
+projeleriGoster(projeListesi);

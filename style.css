@@ -1,4 +1,4 @@
-/* Genel Ayarlar & Smooth Scroll */
+
 * { 
     box-sizing: border-box; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
@@ -6,7 +6,7 @@
     scroll-behavior: smooth; 
 }
 
-/* Arka Plan Renk Geçişleri */
+
 body { 
     margin: 0; 
     padding: 20px; 
@@ -37,7 +37,7 @@ nav a:hover { background: #f59e0b; color: #333 !important; }
 
 #temaDegistir { padding: 10px 20px; cursor: pointer; border-radius: 10px; border: none; background: #f59e0b; color: white; margin-bottom: 10px; font-weight: bold; }
 
-/* Cam Efektli Bölümler (Glassmorphism) */
+
 section { 
     padding: 60px 20px; 
     margin: 40px auto;
@@ -117,7 +117,7 @@ body.karanlik-tema .proje-karti { background-color: #2d2d2d; color: white; }
 
 #filtreler button:hover { background: #f59e0b; color: white; }
 
-/* Yetenek Barları */
+
 .bar-dis { width: 80%; background-color: rgba(0,0,0,0.1); border-radius: 10px; margin: 15px auto; height: 25px; }
 .bar-ic { 
     height: 100%; 
@@ -131,7 +131,7 @@ body.karanlik-tema .proje-karti { background-color: #2d2d2d; color: white; }
     transition: width 2s ease-in-out; 
 }
 
-/* Sosyal Medya İletişim Stilleri */
+
 .sosyal-medya {
     margin-top: 25px;
     display: flex;
