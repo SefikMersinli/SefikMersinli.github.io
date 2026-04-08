@@ -21,7 +21,6 @@ body.karanlik-tema {
     color: #f4f4f4; 
 }
 
-/* Header & Navigasyon */
 header { text-align: center; padding: 20px; margin-bottom: 40px; }
 header h1 {
     font-size: 2.5rem;
@@ -56,7 +55,6 @@ body.karanlik-tema section {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Proje Kartları Tasarımı */
 .grid-container { 
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -83,7 +81,6 @@ body.karanlik-tema .proje-karti { background-color: #2d2d2d; color: white; }
 }
 
 .proje-karti:active { transform: scale(0.95); }
-
 .proje-karti img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
 
 .etiket { 
@@ -102,12 +99,10 @@ body.karanlik-tema .proje-karti { background-color: #2d2d2d; color: white; }
     color: #f59e0b; 
     font-weight: bold; 
     opacity: 0; 
-    transition: 0.3s;
 }
 
 .proje-karti:hover .tikla-ipucu { opacity: 1; }
 
-/* Filtreleme Butonları */
 #filtreler { margin-bottom: 30px; }
 #filtreler button { 
     padding: 10px 25px; 
@@ -134,4 +129,29 @@ body.karanlik-tema .proje-karti { background-color: #2d2d2d; color: white; }
     border-radius: 10px; 
     font-size: 12px; 
     transition: width 2s ease-in-out; 
+}
+
+/* Sosyal Medya İletişim Stilleri */
+.sosyal-medya {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.iletisim-link {
+    text-decoration: none;
+    color: #f59e0b;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: rgba(245, 158, 11, 0.1);
+    transition: all 0.3s;
+}
+
+.iletisim-link:hover {
+    transform: translateY(-5px);
+    background: #f59e0b;
+    color: white !important;
 }
