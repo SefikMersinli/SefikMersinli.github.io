@@ -1,0 +1,39 @@
+/* Genel Ayarlar */
+* { box-sizing: border-box; font-family: sans-serif; transition: all 0.3s ease; }
+body { margin: 0; padding: 20px; background-color: #f4f4f4; color: #333; }
+
+/* Karanlık Tema Renkleri */
+body.karanlik-tema { background-color: #1a1a1a; color: #f4f4f4; }
+body.karanlik-tema .proje-karti { background-color: #2d2d2d; color: white; }
+
+/* Header ve Navigasyon */
+header { text-align: center; padding: 20px; margin-bottom: 40px; }
+nav a { margin: 0 15px; text-decoration: none; color: inherit; font-weight: bold; }
+#temaDegistir { padding: 10px 20px; cursor: pointer; border-radius: 5px; border: none; background: #333; color: white; }
+body.karanlik-tema #temaDegistir { background: #f4f4f4; color: #333; }
+
+/* Grid Yapısı (Responsive) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Kart Tasarımı */
+.proje-karti {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.proje-karti img { width: 100%; border-radius: 5px; }
+.etiket { display: inline-block; background: #eee; padding: 5px 10px; border-radius: 15px; font-size: 12px; margin-top: 10px; color: #333; }
+
+/* Buton Stilleri */
+#filtreler { text-align: center; margin-bottom: 20px; }
+#filtreler button { padding: 10px 15px; margin: 5px; cursor: pointer; border: 1px solid #ccc; border-radius: 5px; }
+.bar-dis { width: 100%; background-color: #ddd; border-radius: 10px; margin-bottom: 10px; }
+.bar-ic { height: 20px; background-color: #f59e0b; text-align: right; padding-right: 10px; line-height: 20px; color: white; border-radius: 10px; font-size: 12px; }
+body.karanlik-tema .bar-dis { background-color: #444; }
