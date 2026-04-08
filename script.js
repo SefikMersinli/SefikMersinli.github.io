@@ -19,33 +19,33 @@ async function githubBilgileriniGetir() {
 const projeListesi = [
     { 
         id: 1, 
-        baslik: "Kargo Dağıtım Sistemi", 
+        baslik: "FastKargo Projesi", 
         kategori: "web", 
-        aciklama: "Django ve Python üniversite projem.", 
-        link: "https://github.com/SefikMersinli", 
+        aciklama: "Django ve Python ile geliştirilmiş kapsamlı kargo dağıtım ve yönetim sistemi.", 
+        link: "https://github.com/SefikMersinli/FastKargoProje", 
         gorsel: "img/kargo.jpg" 
     },
     { 
         id: 2, 
+        baslik: "LibreTrack Kütüphane", 
+        kategori: "web", 
+        aciklama: "Kitap takibi ve kütüphane yönetimi için geliştirilmiş modern web uygulaması.", 
+        link: "https://github.com/SefikMersinli/LibreTrack", 
+        gorsel: "img/otomasyon.png" 
+    },
+    { 
+        id: 3, 
         baslik: "İHA-1 Kontrol Paneli", 
         kategori: "mobil", 
-        aciklama: "Drone verilerini izleme arayüzü.", 
+        aciklama: "Drone verilerini ve uçuş parametrelerini izlemek için tasarlanmış arayüz çalışması.", 
         link: "https://github.com/SefikMersinli", 
         gorsel: "img/iha.jpg" 
     },
     { 
-        id: 3, 
+        id: 4, 
         baslik: "Python Otomasyon", 
         kategori: "web", 
-        aciklama: "Günlük Python scriptleri.", 
-        link: "https://github.com/SefikMersinli", 
-        gorsel: "img/otomasyon.png" 
-    },
-    { 
-        id: 4, 
-        baslik: "E-Ticaret Arayüzü", 
-        kategori: "web", 
-        aciklama: "Modern alışveriş sitesi tasarımı.", 
+        aciklama: "Verimliliği artırmak için geliştirilen günlük iş otomasyon scriptleri.", 
         link: "https://github.com/SefikMersinli", 
         gorsel: "img/kargo.jpg" 
     },
@@ -53,7 +53,7 @@ const projeListesi = [
         id: 5, 
         baslik: "Hava Durumu Uygulaması", 
         kategori: "mobil", 
-        aciklama: "Anlık veri çeken mobil uygulama.", 
+        aciklama: "API entegrasyonu ile anlık hava durumu verilerini sunan mobil uygulama.", 
         link: "https://github.com/SefikMersinli", 
         gorsel: "img/iha.jpg" 
     }
