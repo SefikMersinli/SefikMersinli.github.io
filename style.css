@@ -39,3 +39,26 @@ body.karanlik-tema #temaDegistir { background: #f4f4f4; color: #333; }
 body.karanlik-tema .bar-dis { background-color: #444; }
 
 /* Final Kontrol Tamamlandi */
+nav {
+    background: #333;
+    padding: 15px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background: #f59e0b;
+    color: #333 !important;
+}
+
+/* Yetenek barlarına animasyon */
+.bar-ic {
+    transition: width 2s ease-in-out;
+}

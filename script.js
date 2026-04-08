@@ -1,42 +1,51 @@
+// GitHub profil bilgilerini çekme fonksiyonu
+async function githubBilgileriniGetir() {
+    try {
+        const cevap = await fetch('https://api.github.com/users/SefikMersinli');
+        const veri = await cevap.json();
+        
+        // HTML'deki ilgili alanları dolduruyoruz
+        document.getElementById("hakkimda").innerHTML = `
+            <h2>Hakkımda</h2>
+            <img src="${veri.avatar_url}" alt="${veri.name}" style="width:150px; border-radius:50%; border: 3px solid #f59e0b;">
+            <p>${veri.bio || "Gümüşhane Üniversitesi Bilgisayar Programcılığı öğrencisi."}</p>
+            <p><strong>Konum:</strong> ${veri.location || "Gümüşhane"}</p>
+            <p><strong>Takipçi:</strong> ${veri.followers} | <strong>Repo Sayısı:</strong> ${veri.public_repos}</p>
+        `;
+    } catch (hata) {
+        console.log("GitHub verisi çekilemedi:", hata);
+    }
+}
+githubBilgileriniGetir();
+
+
 // Projelerimizi tutan ana dizi
 const projeListesi = [
     {
         id: 1,
-        baslik: "Hastane Randevu Sistemi",
+        baslik: "Kargo Dağıtım Sistemi",
         kategori: "web",
-        aciklama: "JS ile geliştirilmiş randevu takip sistemi.",
-        gorsel: "https://via.placeholder.com/300" // Buraya gerçek resim linki gelecek
+        aciklama: "Django ve Python kullanılarak geliştirilmiş üniversite projem.",
+        link: "https://github.com/SefikMersinli/kargo-dagitim", // Varsa gerçek linkini koy
+        gorsel: "https://via.placeholder.com/300/1a1a1a/ffffff?text=Django+Projesi"
     },
     {
         id: 2,
-        baslik: "Kitap Takip Uygulaması",
-        kategori: "web",
-        aciklama: "Kütüphane yönetim paneli.",
-        gorsel: "https://via.placeholder.com/300"
+        baslik: "İHA-1 Drone Kontrol Paneli",
+        kategori: "mobil",
+        aciklama: "İHA-1 sertifikalı pilot olarak drone verilerini izleme arayüzü.",
+        link: "https://github.com/SefikMersinli",
+        gorsel: "https://via.placeholder.com/300/1a1a1a/ffffff?text=Drone+Project"
     },
     {
         id: 3,
-        baslik: "Hava Durumu Mobil",
-        kategori: "mobil",
-        aciklama: "React Native ile mobil uygulama.",
-        gorsel: "https://via.placeholder.com/300"
-    },
-    {
-        id: 4,
-        baslik: "E-Ticaret Arayüzü",
+        baslik: "Python Otomasyon Araçları",
         kategori: "web",
-        aciklama: "Tailwind CSS ile modern tasarım.",
-        gorsel: "https://via.placeholder.com/300"
-    },
-    {
-        id: 5,
-        baslik: "Banka Uygulaması",
-        kategori: "mobil",
-        aciklama: "Güvenli mobil bankacılık arayüzü.",
-        gorsel: "https://via.placeholder.com/300"
+        aciklama: "Günlük işleri kolaylaştıran Python scriptleri.",
+        link: "https://github.com/SefikMersinli",
+        gorsel: "https://via.placeholder.com/300/1a1a1a/ffffff?text=Python+Tools"
     }
 ];
-// Proje listesi zaten üstte tanımlıydı...
 
 const projeAlani = document.getElementById("projeAlani");
 const temaButonu = document.getElementById("temaDegistir");
