@@ -17,11 +17,23 @@ async function githubBilgileriniGetir() {
 
 // 2. GÖREV: Proje Verileri - 5 PROJE (Rubrik Gereği Tam Liste)
 const projeListesi = [
-    { id: 1, baslik: "Kargo Dağıtım Sistemi", kategori: "web", aciklama: "Django ve Python üniversite projem.", link: "https://github.com/SefikMersinli", gorsel: "https://via.placeholder.com/300/1a1a1a/ffffff?text=Django+Projesi" },
-    { id: 2, baslik: "İHA-1 Kontrol Paneli", kategori: "mobil", aciklama: "Drone verilerini izleme arayüzü.", link: "https://github.com/SefikMersinli", gorsel: "https://via.placeholder.com/300/1a1a1a/ffffff?text=Drone+Project" },
-    { id: 3, baslik: "Python Otomasyon", kategori: "web", aciklama: "Günlük Python scriptleri.", link: "https://github.com/SefikMersinli", gorsel: "https://via.placeholder.com/300/1a1a1a/ffffff?text=Python+Tools" },
-    { id: 4, baslik: "E-Ticaret Arayüzü", kategori: "web", aciklama: "Modern alışveriş sitesi tasarımı.", link: "https://github.com/SefikMersinli", gorsel: "https://via.placeholder.com/300/1a1a1a/ffffff?text=E-Commerce" },
-    { id: 5, baslik: "Hava Durumu Uygulaması", kategori: "mobil", aciklama: "Anlık veri çeken mobil uygulama.", link: "https://github.com/SefikMersinli", gorsel: "https://via.placeholder.com/300/1a1a1a/ffffff?text=Weather+App" }
+    { 
+        id: 1, 
+        baslik: "Kargo Dağıtım Sistemi", 
+        kategori: "web", 
+        aciklama: "Django ve Python üniversite projem.", 
+        link: "https://github.com/SefikMersinli", 
+        gorsel: "img/kargo.jpg" // Kendi resmin
+    },
+    { 
+        id: 2, 
+        baslik: "İHA-1 Kontrol Paneli", 
+        kategori: "mobil", 
+        aciklama: "Drone verilerini izleme arayüzü.", 
+        link: "https://github.com/SefikMersinli", 
+        gorsel: "img/iha.jpg" 
+    },
+    // ... diğer 3 proje için de aynı şekilde yap
 ];
 
 const projeAlani = document.getElementById("projeAlani");
