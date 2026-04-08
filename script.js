@@ -16,12 +16,13 @@ async function githubBilgileriniGetir() {
 }
 
 // 2. GÖREV: Proje Verileri - 5 PROJE (Rubrik Gereği Tam Liste)
+// 2. GÖREV: Proje Verileri - 5 PROJE (Rubrik Gereği Tam Liste)
 const projeListesi = [
     { 
         id: 1, 
         baslik: "FastKargo Projesi", 
         kategori: "web", 
-        aciklama: "Django ve Python ile geliştirilmiş kapsamlı kargo dağıtım ve yönetim sistemi.", 
+        aciklama: "Django ve Python ile geliştirilmiş kapsamlı kargo dağıtım sistemi.", 
         link: "https://github.com/SefikMersinli/FastKargoProje", 
         gorsel: "img/kargo.jpg" 
     },
@@ -37,7 +38,7 @@ const projeListesi = [
         id: 3, 
         baslik: "İHA-1 Kontrol Paneli", 
         kategori: "mobil", 
-        aciklama: "Drone verilerini ve uçuş parametrelerini izlemek için tasarlanmış arayüz çalışması.", 
+        aciklama: "Drone verilerini ve uçuş parametrelerini izleme arayüzü.", 
         link: "https://github.com/SefikMersinli", 
         gorsel: "img/iha.jpg" 
     },
@@ -45,7 +46,7 @@ const projeListesi = [
         id: 4, 
         baslik: "Python Otomasyon", 
         kategori: "web", 
-        aciklama: "Verimliliği artırmak için geliştirilen günlük iş otomasyon scriptleri.", 
+        aciklama: "Günlük işleri kolaylaştıran Python tabanlı scriptler.", 
         link: "https://github.com/SefikMersinli", 
         gorsel: "img/kargo.jpg" 
     },
@@ -53,7 +54,7 @@ const projeListesi = [
         id: 5, 
         baslik: "Hava Durumu Uygulaması", 
         kategori: "mobil", 
-        aciklama: "API entegrasyonu ile anlık hava durumu verilerini sunan mobil uygulama.", 
+        aciklama: "Anlık hava durumu verilerini sunan mobil uygulama çalışması.", 
         link: "https://github.com/SefikMersinli", 
         gorsel: "img/iha.jpg" 
     }
