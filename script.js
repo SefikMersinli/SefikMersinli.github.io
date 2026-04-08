@@ -47,7 +47,7 @@ const projeListesi = [
         kategori: "web", 
         aciklama: "Günlük işleri kolaylaştıran Python tabanlı scriptler.", 
         link: "https://github.com/SefikMersinli", 
-        gorsel: "img/kargo.jpg" 
+        gorsel: "img/python.jpg" 
     },
     { 
         id: 5, 
@@ -55,7 +55,7 @@ const projeListesi = [
         kategori: "mobil", 
         aciklama: "Anlık hava durumu verilerini sunan mobil uygulama çalışması.", 
         link: "https://github.com/SefikMersinli", 
-        gorsel: "img/iha.jpg" 
+        gorsel: "img/hava.jpg" 
     }
 ];
 
