@@ -27,3 +27,37 @@ section { padding: 60px 20px; border-bottom: 1px solid #ddd; text-align: center;
 .bar-dis { width: 80%; background-color: #ddd; border-radius: 10px; margin: 10px auto; }
 .bar-ic { height: 20px; background-color: #f59e0b; text-align: right; padding-right: 10px; line-height: 20px; color: white; border-radius: 10px; font-size: 12px; transition: width 2s ease-in-out; }
 body.karanlik-tema .bar-dis { background-color: #444; }
+/* Kart Tıklama ve Hover Efektleri */
+.proje-karti {
+    cursor: pointer; /* Üstüne gelince el işareti çıksın */
+    position: relative;
+    overflow: hidden;
+}
+
+.proje-karti:hover {
+    transform: translateY(-10px); /* Yukarı doğru hafif kaysın */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Gölgesi artsın */
+    border: 1px solid #f59e0b; /* Kenarlığı turuncu olsun */
+}
+
+.proje-karti:active {
+    transform: scale(0.95); /* Tıklandığında hafif küçülsün (basma hissi) */
+}
+
+.tikla-ipucu {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #f59e0b;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.proje-karti:hover .tikla-ipucu {
+    opacity: 1; /* Sadece hover olunca yazı çıksın */
+}
+
+/* Karanlık Modda Hover Ayarı */
+body.karanlik-tema .proje-karti:hover {
+    background-color: #3d3d3d;
+}
