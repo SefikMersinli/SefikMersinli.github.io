@@ -23,7 +23,7 @@ const projeListesi = [
         kategori: "web", 
         aciklama: "Django ve Python üniversite projem.", 
         link: "https://github.com/SefikMersinli", 
-        gorsel: "img/kargo.jpg" // Kendi resmin
+        gorsel: "img/kargo.jpg" 
     },
     { 
         id: 2, 
@@ -33,7 +33,30 @@ const projeListesi = [
         link: "https://github.com/SefikMersinli", 
         gorsel: "img/iha.jpg" 
     },
-    // ... diğer 3 proje için de aynı şekilde yap
+    { 
+        id: 3, 
+        baslik: "Python Otomasyon", 
+        kategori: "web", 
+        aciklama: "Günlük Python scriptleri.", 
+        link: "https://github.com/SefikMersinli", 
+        gorsel: "img/otomasyon.png" 
+    },
+    { 
+        id: 4, 
+        baslik: "E-Ticaret Arayüzü", 
+        kategori: "web", 
+        aciklama: "Modern alışveriş sitesi tasarımı.", 
+        link: "https://github.com/SefikMersinli", 
+        gorsel: "img/kargo.jpg" 
+    },
+    { 
+        id: 5, 
+        baslik: "Hava Durumu Uygulaması", 
+        kategori: "mobil", 
+        aciklama: "Anlık veri çeken mobil uygulama.", 
+        link: "https://github.com/SefikMersinli", 
+        gorsel: "img/iha.jpg" 
+    }
 ];
 
 const projeAlani = document.getElementById("projeAlani");
